@@ -3,6 +3,7 @@ import unittest
 
 import mob_assistant
 
+
 class TestMobAssistant(unittest.TestCase):
     def setUp(self):
         pass
