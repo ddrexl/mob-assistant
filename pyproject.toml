@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mob-assistant"
-version = "0.1.0"
+version = "0.2.0"
 description = "An assistant for mob programming."
 authors = ["Dominik Drexl <domdrexl@gmail.com>"]
 license = "MIT"
