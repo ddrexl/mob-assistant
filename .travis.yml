@@ -6,8 +6,9 @@ before_install:
 install:
 - poetry install
 script:
-- pre-commit run --all-files
+- poetry run pre-commit run --all-files
 - poetry run pytest
+- poetry run behave --tags=~wip
 env:
   global:
   - secure: G4sM7Qryd6y4R17WE+C2BWUp3btodCdQ6ceAT9XYmVlAHwTe8FMf+7mVmbwq4yN0me078mJYDOoAZLNoW4yFIxKH55V0m22Omgl8JQorJdiG1A60D9161nhVYeZHnuC4JMm2A/kwbeQe07D39D+LqDqtv4rK4BQnlrs61nzjx7BFRMPSEm4YECkeMRPq5fM/u9Mi+bWH6vRIe5CjNGvpp9dbeY4JYUXNq5LcY6fA18YwgDyDRHLr2jCz/zc/YRvUSPkIzM1ApL85Co3FyQKCxkFENwiNTyUP00c/yqq8HWaceBQhcy9KniR/xpygz+WMBTKbagKQFZwcFxj7XB2n5y46JPwKmPya/zwfyR7C3vgnFrNg9QF+IHxrqEobm3/KD7iD64D527wGxTGINmUkUfbzXGOAEcjUJE9US4lFR47wx03x7FLMn5NsEp2YOznO4jdHTtrtrq+XrWRoEB6HOizDGIif7Ds3LMbhpznzV/knCLMDHxGL5ANxQue3PL0VCUH8FtYoIWdQCQsuEw/NrdRoK9a9OF8C29U5t3JNsCvknHrYObD5an5cjKzuxXhyf73O5xeep2QI4phJimV0K0JaAuspS2ipTXHqudYCv1kPiH1okXc4WbmLqKevAYzzgR1i+jIinoCZDw7rJMTPaNmeBINukhPPMWEQsLfXXH0=
