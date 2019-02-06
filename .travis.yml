@@ -5,7 +5,6 @@ before_install:
 - pip install poetry
 install:
 - poetry install
-- pre-commit install
 script:
 - pre-commit run --all-files
 - poetry run pytest
